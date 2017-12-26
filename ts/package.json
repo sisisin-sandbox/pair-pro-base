@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register test/*.ts",
+    "test": "mocha --opts mocha.opts",
     "watch": "tsc -w",
+    "watch-test":"mocha -w --opts mocha.opts",
     "build": "tsc",
     "start": "node dist/src/index.js"
   },
